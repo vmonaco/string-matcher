@@ -2,8 +2,8 @@
 
 The Clojure string matcher agent provides a simple way to lookup similar strings with a built in cache. The similarity between two strings is given by
 
-    `|adj(s1) ∩ adj(s2)|/(|adj(s1)| + |adj(s2)|)`
-    `+ |char(s1) ∩ char(s2)|/(|char(s1)| + |char(s2)|)`
+    |adj(s1) ∩ adj(s2)|/(|adj(s1)| + |adj(s2)|)
+    + |char(s1) ∩ char(s2)|/(|char(s1)| + |char(s2)|)
 
 where adj(s1) is the bag of adjacent letter pairs in string s1, char(s1) is the bag of characters in string s1, and |·| is set cardinality. A bag is a set that may contain duplicate elements. Non-alphanumeric characters are ignored.
 
