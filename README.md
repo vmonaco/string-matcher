@@ -16,9 +16,7 @@ Create the string matcher with the supplied dictionary.
   ;; setup the string matcher
   (def dictionary ["vinnie" "vinnie monaco" "v" "v m" "vm"])
   (def matcher (new-string-matcher dictionary))
-  (f)
-  
-  )
+  (f))
 ```
 
 This test should pass.
@@ -34,8 +32,7 @@ This test should pass.
   ;; two single letters
   (is (= "v m" (match-string matcher "v M")))
   ;; one single letter
-  (is (= "vm" (match-string matcher "v vm")))
-  )
+  (is (= "vm" (match-string matcher "v vm"))))
 ```
 
 ## Usage
